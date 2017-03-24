@@ -69,7 +69,7 @@ public class KeyControl : MonoBehaviour {
 			rb.velocity = emath.MultiplyVectors (rb.velocity, Vector3.up);
 
 		}
-		if (canJump) {
+		if (canJump && rb.velocity.y < jumpForceAmount/1) {
 			foreach (KeyCode k in jumpKeys) {
 				if (Input.GetKey (k)) {
 					rb.AddRelativeForce (new Vector3 (0, jumpForceAmount, 0));

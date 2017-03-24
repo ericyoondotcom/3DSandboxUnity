@@ -52,7 +52,9 @@
      <Compile Include="Assets\Scripts\KeyControl.cs" />
      <Compile Include="Assets\Scripts\KillBox.cs" />
      <Compile Include="Assets\Scripts\MatchPos.cs" />
+     <Compile Include="Assets\Scripts\Mining.cs" />
      <Compile Include="Assets\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\SetPosAndRot.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/Users/yooniverse/Documents/3DSandboxUnity/3D Sandbox Game/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
