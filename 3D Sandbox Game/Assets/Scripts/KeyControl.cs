@@ -25,7 +25,9 @@ public class KeyControl : MonoBehaviour {
 
 	}
 	
-	void OnCollisionEnter(){
+	void OnCollisionEnter(Collision coll){
+		ContactPoint contact = coll.contacts [0];
+		if(Vector3.Dot (contact.normal, Vector3.up) > 0.5)
 		canJump = true;
 	}
 	void OnCollisionExit(){
@@ -69,7 +71,7 @@ public class KeyControl : MonoBehaviour {
 			rb.velocity = emath.MultiplyVectors (rb.velocity, Vector3.up);
 
 		}
-		if (canJump && rb.velocity.y < jumpForceAmount/1) {
+		if (canJump/* && rb.velocity.y < jumpForceAmount/1*/) {
 			foreach (KeyCode k in jumpKeys) {
 				if (Input.GetKey (k)) {
 					rb.AddRelativeForce (new Vector3 (0, jumpForceAmount, 0));
