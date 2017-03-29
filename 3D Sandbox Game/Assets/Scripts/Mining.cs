@@ -31,7 +31,7 @@ public class Mining : MonoBehaviour {
 			if (hit.collider.gameObject.tag == "block" && Input.GetMouseButton (mineKey)) {
 				BlockoHealthoMeter bhm = hit.collider.gameObject.GetComponent<BlockoHealthoMeter> ();
 				bhm.health -= mineDamage * Time.deltaTime;
-			} else if (hit.collider.gameObject.tag == "block" && Input.GetMouseButtonDow (placeKey)) {
+			} else if (hit.collider.gameObject.tag == "block" && Input.GetMouseButtonDown (placeKey)) {
 				
 				Vector3 shift;
 				if (Vector3.Dot (hit.normal, Vector3.up) > 0.5) {
