@@ -35,6 +35,10 @@ public class EMath
 			return initial;
 		}
 	}
+	public float AverageWithTwo(float one, float two){//it's only two vals because i'm too lazy to take in an array
+		return (one + two)/2;
+
+	}
 
 }
 

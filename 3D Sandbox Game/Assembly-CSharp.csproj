@@ -48,6 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AlwaysAddForce.cs" />
      <Compile Include="Assets\Scripts\AlwaysLook.cs" />
+     <Compile Include="Assets\Scripts\BlockGen.cs" />
+     <Compile Include="Assets\Scripts\BlockoHealthoMeter.cs" />
      <Compile Include="Assets\Scripts\EMath.cs" />
      <Compile Include="Assets\Scripts\KeyControl.cs" />
      <Compile Include="Assets\Scripts\KillBox.cs" />
