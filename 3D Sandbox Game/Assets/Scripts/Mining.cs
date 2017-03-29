@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Mining : MonoBehaviour {
 	public float reach;
-	public KeyCode mineKey;
-	public KeyCode placeKey;
+	public int mineKey;
+	public int placeKey;
 	public Material targeted;
 	public Material idle;
 	public float mineDamage;
@@ -28,10 +28,10 @@ public class Mining : MonoBehaviour {
 			lr.SetPosition (1, hit.point);
 			lr.material = targeted;
 			lr.enabled = true;	
-			if (hit.collider.gameObject.tag == "block" && Input.GetKey (mineKey)) {
+			if (hit.collider.gameObject.tag == "block" && Input.GetMouseButton (mineKey)) {
 				BlockoHealthoMeter bhm = hit.collider.gameObject.GetComponent<BlockoHealthoMeter> ();
 				bhm.health -= mineDamage * Time.deltaTime;
-			} else if (hit.collider.gameObject.tag == "block" && Input.GetKeyDown (placeKey)) {
+			} else if (hit.collider.gameObject.tag == "block" && Input.GetMouseButtonDow (placeKey)) {
 				
 				Vector3 shift;
 				if (Vector3.Dot (hit.normal, Vector3.up) > 0.5) {
@@ -49,6 +49,7 @@ public class Mining : MonoBehaviour {
 				} else {
 					shift = Vector3.zero;
 					Debug.Log ("The zombie apocalypse is happening!");
+
 				}
 				GameObject n = (GameObject)Instantiate (hit.collider.gameObject, hit.collider.transform.position + shift, hit.collider.transform.rotation);
 				//we're not using "n" but i might need it later
