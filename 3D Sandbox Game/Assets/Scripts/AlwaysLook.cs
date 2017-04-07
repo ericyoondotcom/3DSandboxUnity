@@ -21,7 +21,7 @@ public class AlwaysLook : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision coll){
 		ContactPoint contact = coll.contacts [0];
-		if (!(Vector3.Dot (contact.normal, Vector3.up) > 0.5 || Vector3.Dot (contact.normal, Vector3.down) > 0.5)) {
+		if (coll.gameObject.tag == "block" && !(Vector3.Dot (contact.normal, Vector3.up) > 0.5 || Vector3.Dot (contact.normal, Vector3.down) > 0.5)) {
 			rb.AddForce (0, jumpHeight, 0);
 		}
 	}

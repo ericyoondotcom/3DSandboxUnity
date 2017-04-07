@@ -28,10 +28,10 @@ public class Mining : MonoBehaviour {
 			lr.SetPosition (1, hit.point);
 			lr.material = targeted;
 			lr.enabled = true;	
-			if (hit.collider.gameObject.tag == "block" && Input.GetMouseButton (mineKey)) {
+			if ((hit.collider.gameObject.tag == "block" || hit.collider.gameObject.tag == "npc") && Input.GetMouseButton (mineKey)) {
 				BlockoHealthoMeter bhm = hit.collider.gameObject.GetComponent<BlockoHealthoMeter> ();
 				bhm.health -= mineDamage * Time.deltaTime;
-			} else if (hit.collider.gameObject.tag == "block" && Input.GetMouseButtonDown (placeKey)) {
+			} else if ((hit.collider.gameObject.tag == "block"/* || hit.collider.gameObject.tag == "npc"*/) && Input.GetMouseButtonDown (placeKey)) {
 				
 				Vector3 shift;
 				if (Vector3.Dot (hit.normal, Vector3.up) > 0.5) {

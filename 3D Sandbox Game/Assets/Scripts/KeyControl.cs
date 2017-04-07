@@ -22,7 +22,6 @@ public class KeyControl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
-
 	}
 	
 	void OnCollisionEnter(Collision coll){

@@ -39,6 +39,9 @@ public class EMath
 		return (one + two)/2;
 
 	}
+	public float DenominateFrac(float numerator, float denominator, float newDenom){
+		return numerator * (newDenom / denominator);
+	}
 
 }
 
