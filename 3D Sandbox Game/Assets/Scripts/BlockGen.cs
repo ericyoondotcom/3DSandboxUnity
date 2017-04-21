@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class BlockGen : MonoBehaviour
 {
+	public float startingY = 50;
 	public GameObject prefab;
 	public float deviation;
 	public float worldSideSquared = 25;
 	public Material dirt;
+	public Material stone;
+	public Material coalOre;
+	public Material ironOre;
+	public Material goldOre;
+	public Material diamondOre;
 	EMath emath = new EMath ();
 	// Use this for initialization
 	void Start ()
 	{
+		Time.timeScale = 0;
 		Dictionary<Vector2, float> data = new Dictionary<Vector2, float> ();
 
 		for (int x = 0; x < worldSideSquared; x++) {
@@ -19,7 +26,7 @@ public class BlockGen : MonoBehaviour
 				float yval;
 				if (x == 0) {
 					if (z == 0) {
-						yval = 0;
+						yval = startingY;
 						//first block, yval = 0
 					} else {
 						yval = data [new Vector2 (x, z - 1)] + Random.Range (-deviation, deviation);
@@ -41,12 +48,44 @@ public class BlockGen : MonoBehaviour
 				data.Add (new Vector2 (x, z), yval);
 				for (int y = 0; y < yval; y++) {
 					GameObject n = (GameObject)Instantiate (prefab, new Vector3 (x, y, z), Quaternion.identity);
-					if (y != yval - 1)
+					if (y != yval - 1) {
+						if(y < yval - Random.Range(5,10)){
+							/*
+							if(Random.Range(0, 6) == 0){
+								if (Random.Range (0, 3) == 0) {
+									if (Random.Range (0, 3) == 0) {
+										if (Random.Range (0, 3) == 0) {
+											//diamond, 0.6%
+											n.GetComponent<MeshRenderer> ().material = diamondOre;
+										} else {
+											//gold, 1%
+											n.GetComponent<MeshRenderer> ().material = goldOre;
+										}
+									} else {
+										//iron, 3%
+										n.GetComponent<MeshRenderer> ().material = ironOre;
+									}
+								} else {
+									//coal, 11%
+									n.GetComponent<MeshRenderer> ().material = coalOre;
+								}
+							}
+							else{
+								//stone, 83%
+							n.GetComponent<MeshRenderer> ().material = stone;
+							}*/
+
+
+
+						}
+						else{
 						n.GetComponent<MeshRenderer> ().material = dirt;
+						}
+					}
 				}
 			}
 		}
-
+		Time.timeScale = 1;
 
 	}
 }

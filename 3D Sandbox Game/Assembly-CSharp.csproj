@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\DamagePlayer.cs" />
      <Compile Include="Assets\Scripts\EMath.cs" />
      <Compile Include="Assets\Scripts\HealthMask.cs" />
+     <Compile Include="Assets\Scripts\HideWhenOutOfRange.cs" />
      <Compile Include="Assets\Scripts\KeyControl.cs" />
      <Compile Include="Assets\Scripts\KillBox.cs" />
      <Compile Include="Assets\Scripts\MatchPos.cs" />

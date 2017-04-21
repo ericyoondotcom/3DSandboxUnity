@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthMask : MonoBehaviour {
 	public float maxWidth;
 	public PlayerHealth player;
-	public float posx;
+	//public float posx;
 	EMath emath = new EMath();
 	RectTransform rt;
 
@@ -18,6 +18,6 @@ public class HealthMask : MonoBehaviour {
 	void Update () {
 		
 		rt.sizeDelta = new Vector2(emath.DenominateFrac (player.health, player.maxHealth, maxWidth), rt.sizeDelta.y);
-		rt.anchoredPosition = new Vector2 (posx - (emath.DenominateFrac (player.health, player.maxHealth, maxWidth) / 2), rt.anchoredPosition.y);
+		//rt.anchoredPosition = new Vector2 (posx - (emath.DenominateFrac (player.health, player.maxHealth, maxWidth) / 2), rt.anchoredPosition.y);
 	}
 }

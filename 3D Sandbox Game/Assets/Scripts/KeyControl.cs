@@ -26,11 +26,13 @@ public class KeyControl : MonoBehaviour {
 	
 	void OnCollisionEnter(Collision coll){
 		ContactPoint contact = coll.contacts [0];
-		if(Vector3.Dot (contact.normal, Vector3.up) > 0.5)
-		canJump = true;
+		if (Vector3.Dot (contact.normal, Vector3.up) > 0.5) {
+			canJump = true;
+		}
 	}
-	void OnCollisionExit(){
-		canJump = false;
+	void OnCollisionExit(Collision coll){
+			canJump = false;
+		
 	}
 
 	void FixedUpdate () {

@@ -16,6 +16,11 @@ public class MouseLook : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (Input.GetKeyDown (KeyCode.F1)) {
+			Debug.Log ("Locking mouse.");
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+
 		float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;
 
 		rotationY += Input.GetAxis("Mouse Y") * sensitivityY;

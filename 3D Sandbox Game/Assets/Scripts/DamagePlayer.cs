@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class DamagePlayer : MonoBehaviour {
 	public int damage;
+	public float damageSpeed = 0.7f;
+	bool attack = true;
 
-	void OnCollisionEnter(Collision coll){
+
+	void OnCollisionStay(Collision coll){
+		if (attack != true) {
+			return;
+		}
+		StartCoroutine (HurtCycle ());
 		PlayerHealth ph = coll.gameObject.GetComponent<PlayerHealth> ();
 		if (ph == null) {
 			return;
@@ -15,4 +22,13 @@ public class DamagePlayer : MonoBehaviour {
 
 
 	}
+
+	IEnumerator HurtCycle(){
+		attack = false;
+			yield return new WaitForSeconds (damageSpeed);
+		attack = true;
+	}
+
+
+
 }
