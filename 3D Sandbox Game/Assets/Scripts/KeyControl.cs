@@ -35,6 +35,7 @@ public class KeyControl : MonoBehaviour {
 		
 	}
 
+
 	void FixedUpdate () {
 		bool moved = false;
 		float yvel = rb.velocity.y;
@@ -81,4 +82,9 @@ public class KeyControl : MonoBehaviour {
 			}
 		}
 	}
+
+	void explosion(Vector3 pos){
+		rb.AddExplosionForce (99, pos, 12);
+	}
+
 }

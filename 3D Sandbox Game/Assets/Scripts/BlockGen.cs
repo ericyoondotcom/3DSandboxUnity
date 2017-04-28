@@ -50,7 +50,7 @@ public class BlockGen : MonoBehaviour
 					GameObject n = (GameObject)Instantiate (prefab, new Vector3 (x, y, z), Quaternion.identity);
 					if (y != yval - 1) {
 						if(y < yval - Random.Range(5,10)){
-							/*
+							
 							if(Random.Range(0, 6) == 0){
 								if (Random.Range (0, 3) == 0) {
 									if (Random.Range (0, 3) == 0) {
@@ -73,7 +73,7 @@ public class BlockGen : MonoBehaviour
 							else{
 								//stone, 83%
 							n.GetComponent<MeshRenderer> ().material = stone;
-							}*/
+							}
 
 
 

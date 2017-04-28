@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Mining : MonoBehaviour {
 	public float reach;
@@ -9,6 +10,9 @@ public class Mining : MonoBehaviour {
 	public Material targeted;
 	public Material idle;
 	public float mineDamage;
+	public List<Material> blockSel;
+	public Text matDisp;
+	int currMat = 0;
 
 	LineRenderer lr;
 	// Use this for initialization
@@ -18,8 +22,18 @@ public class Mining : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-			
+
+		KeyCode[] kcs = new KeyCode[]{KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4, KeyCode.Alpha5, KeyCode.Alpha6, KeyCode.Alpha7, KeyCode.Alpha8, KeyCode.Alpha9, KeyCode.Alpha0};
+		if (kcs.Length != blockSel.Count) {
+			Debug.LogError ("kcs and blockSel do not have the same length/count!");
+
+		}
+		for (int i = 0; i < kcs.Length; i++) {
+			if (Input.GetKeyDown (kcs [i])) {
+				currMat = i;
+			}
+		}
+		matDisp.text = blockSel [currMat].name;
 			lr.SetPosition (0, transform.position);
 			Vector3 origin = Camera.main.ViewportToWorldPoint (new Vector3(0.5f, 0.5f, 0.0f));
 			RaycastHit hit;
@@ -52,6 +66,8 @@ public class Mining : MonoBehaviour {
 
 				}
 				GameObject n = (GameObject)Instantiate (hit.collider.gameObject, hit.collider.transform.position + shift, hit.collider.transform.rotation);
+				MeshRenderer mr = n.GetComponent<MeshRenderer> ();
+				mr.material = blockSel [currMat];
 				//we're not using "n" but i might need it later
 
 			

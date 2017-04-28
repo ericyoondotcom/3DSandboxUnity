@@ -42,4 +42,9 @@ public class PlayerHealth : MonoBehaviour {
 
 
 	}
+	void explosion(Vector3 pos){
+		if (Vector3.Distance (transform.position, pos) < 7) {
+			health -= 7;
+		}
+	}
 }

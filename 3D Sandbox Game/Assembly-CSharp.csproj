@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\BlockGen.cs" />
      <Compile Include="Assets\Scripts\BlockoHealthoMeter.cs" />
      <Compile Include="Assets\Scripts\ChanceNoise.cs" />
+     <Compile Include="Assets\Scripts\CreeperExplode.cs" />
      <Compile Include="Assets\Scripts\DamagePlayer.cs" />
      <Compile Include="Assets\Scripts\EMath.cs" />
      <Compile Include="Assets\Scripts\HealthMask.cs" />
@@ -62,6 +63,7 @@
      <Compile Include="Assets\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\SetPosAndRot.cs" />
+     <Compile Include="Assets\Scripts\Sneaking.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/Users/yooniverse/Documents/3DSandboxUnity/3D Sandbox Game/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
