@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BlockGen : MonoBehaviour
-{
+{	public bool isSuperflat = true;
 	public float startingY = 50;
 	public GameObject prefab;
 	public float deviation;
@@ -24,8 +24,8 @@ public class BlockGen : MonoBehaviour
 		for (int x = 0; x < worldSideSquared; x++) {
 			for (int z = 0; z < worldSideSquared; z++) {
 				float yval;
-				if (x == 0) {
-					if (z == 0) {
+				if (x == 0 || isSuperflat) {
+					if (z == 0 || isSuperflat) {
 						yval = startingY;
 						//first block, yval = 0
 					} else {
@@ -45,6 +45,7 @@ public class BlockGen : MonoBehaviour
 				if (yval <= 0) {
 					yval = 1;
 				}
+
 				data.Add (new Vector2 (x, z), yval);
 				for (int y = 0; y < yval; y++) {
 					GameObject n = (GameObject)Instantiate (prefab, new Vector3 (x, y, z), Quaternion.identity);
