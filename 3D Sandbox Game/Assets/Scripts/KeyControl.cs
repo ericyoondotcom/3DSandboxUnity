@@ -84,7 +84,7 @@ public class KeyControl : MonoBehaviour {
 	}
 
 	void explosion(Vector3 pos){
-		rb.AddExplosionForce (99, pos, 12);
+		//rb.AddExplosionForce (99, pos, 12);
 	}
 
 }

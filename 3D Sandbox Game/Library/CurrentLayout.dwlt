@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1
+    x: 0
     y: 44
     width: 1680
     height: 997
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1680
     height: 997
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1680
     height: 947
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 681, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 46
+  controlID: 47
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 47
+  controlID: 48
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 48
+  controlID: 49
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -254,8 +254,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 335
+    x: 334
     y: 93
     width: 1067
     height: 655
@@ -359,29 +359,29 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1
+    x: 0
     y: 93
     width: 330
     height: 655
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 9c6afaffccfbffff00000000d025000026260000
+    m_SelectedIDs: a83ae8ff
+    m_LastClickedID: -1557848
+    m_ExpandedIDs: 1ec2f0ff26adf1ffca92f2ff0606f3ffa473f3ffd6e8f3ffced1f4ff68b5f6ffa0b6f6ff2a28f7ff7259f8ff8859f8ffc05bf8ffaa62fbffccfbffff00000000f2250000162600006c38000086380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Sphere
-      m_OriginalName: Sphere
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 9660
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 335
+    x: 334
     y: 93
     width: 1067
     height: 655
@@ -422,9 +422,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -223.89627, y: -42.296486, z: -451.7906}
+    m_Target: {x: 20.911665, y: 201.16502, z: -199.04227}
     speed: 2
-    m_Value: {x: -223.89627, y: -42.296486, z: -451.7906}
+    m_Value: {x: 20.911665, y: 201.16502, z: -199.04227}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -447,18 +447,18 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.014518022, y: -0.9754328, z: 0.06771526, w: 0.20912853}
+    m_Target: {x: -0.024915792, y: 0.9386179, z: 0.33698612, w: 0.069398}
     speed: 2
-    m_Value: {x: 0.014518022, y: -0.9754328, z: 0.06771526, w: 0.20912853}
+    m_Value: {x: -0.024915792, y: 0.9386179, z: 0.33698612, w: 0.069398}
   m_Size:
-    m_Target: 558.90625
+    m_Target: 271.6997
     speed: 2
-    m_Value: 558.90625
+    m_Value: 271.6997
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
-  m_LastSceneViewRotation: {x: -0.1198858, y: 0.6213483, z: -0.09696621, w: -0.76821303}
+  m_LastSceneViewRotation: {x: -0.0032430075, y: 0.9854368, z: 0.018913565, w: 0.16895613}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -486,7 +486,7 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1
+    x: 0
     y: 769
     width: 1401
     height: 250
@@ -510,10 +510,10 @@ MonoBehaviour:
   m_LastProjectPath: /Users/yooniverse/Documents/3DSandboxUnity/3D Sandbox Game
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 7}
-    m_SelectedIDs: 4a250000
-    m_LastClickedID: 9546
-    m_ExpandedIDs: 00000000dc2400007825000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 23}
+    m_SelectedIDs: 54250000
+    m_LastClickedID: 9556
+    m_ExpandedIDs: 00000000e2240000882500008e25000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -541,7 +541,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000dc24000078250000
+    m_ExpandedIDs: 00000000e224000088250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -568,33 +568,31 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 24220000742200005e220000fa210000d221000000000000cc210000de210000e2210000e0210000d0210000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 24220000742200005e220000fa210000d221000000000000cc210000de210000e2210000e0210000d0210000707effff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: NewBehaviourScript
-      m_OriginalName: NewBehaviourScript
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
-        x: 1200.4375
-        y: 75
-        width: 71
-        height: 14
+        x: 0
+        y: 0
+        width: 0
+        height: 0
       m_UserData: 0
       m_IsWaitingForDelay: 0
-      m_IsRenaming: 1
-      m_OriginalEventType: 21
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
-      m_Path: Assets/Scripts/NewBehaviourScript.cs
-      m_Icon: {fileID: 8647890191352912404, guid: 0000000000000000d000000000000000,
-        type: 0}
-      m_ResourceFile: /Applications/Unity/Unity.app/Contents/Resources/ScriptTemplates/81-C#
-        Script-NewBehaviourScript.cs.txt
-    m_NewAssetIndexInList: 15
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 115
@@ -620,7 +618,7 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1
+    x: 0
     y: 769
     width: 1401
     height: 250
@@ -673,7 +671,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 4a250000
     m_LastClickedID: 9546
-    m_ExpandedIDs: 00000000dc2400007825000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000e224000088250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -701,7 +699,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000dc24000078250000
+    m_ExpandedIDs: 00000000e224000088250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -778,7 +776,7 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1406
+    x: 1405
     y: 93
     width: 275
     height: 926

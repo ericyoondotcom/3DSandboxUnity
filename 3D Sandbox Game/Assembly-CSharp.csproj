@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\ChanceNoise.cs" />
      <Compile Include="Assets\Scripts\CreeperExplode.cs" />
      <Compile Include="Assets\Scripts\DamagePlayer.cs" />
+     <Compile Include="Assets\Scripts\DayNight.cs" />
      <Compile Include="Assets\Scripts\EMath.cs" />
      <Compile Include="Assets\Scripts\HealthMask.cs" />
      <Compile Include="Assets\Scripts\HideWhenOutOfRange.cs" />
@@ -62,8 +63,12 @@
      <Compile Include="Assets\Scripts\Mining.cs" />
      <Compile Include="Assets\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\RandTextGen.cs" />
+     <Compile Include="Assets\Scripts\SceneChanger.cs" />
      <Compile Include="Assets\Scripts\SetPosAndRot.cs" />
      <Compile Include="Assets\Scripts\Sneaking.cs" />
+     <Compile Include="Assets\Scripts\SpawnOnKey.cs" />
+     <None Include="Assets\mcsplashes.txt" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/Users/yooniverse/Documents/3DSandboxUnity/3D Sandbox Game/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
