@@ -55,8 +55,10 @@
      <Compile Include="Assets\Scripts\CreeperExplode.cs" />
      <Compile Include="Assets\Scripts\DamagePlayer.cs" />
      <Compile Include="Assets\Scripts\DayNight.cs" />
+     <Compile Include="Assets\Scripts\DeathCheck.cs" />
      <Compile Include="Assets\Scripts\EMath.cs" />
      <Compile Include="Assets\Scripts\FPSdisp.cs" />
+     <Compile Include="Assets\Scripts\FlyingControl.cs" />
      <Compile Include="Assets\Scripts\HealthMask.cs" />
      <Compile Include="Assets\Scripts\HideWhenOutOfRange.cs" />
      <Compile Include="Assets\Scripts\KeyControl.cs" />
@@ -65,6 +67,7 @@
      <Compile Include="Assets\Scripts\Mining.cs" />
      <Compile Include="Assets\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\Pulse.cs" />
      <Compile Include="Assets\Scripts\RandTextGen.cs" />
      <Compile Include="Assets\Scripts\SceneChanger.cs" />
      <Compile Include="Assets\Scripts\SetPosAndRot.cs" />

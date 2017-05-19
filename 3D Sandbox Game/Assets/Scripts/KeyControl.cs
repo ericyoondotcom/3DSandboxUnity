@@ -9,9 +9,11 @@ public class KeyControl : MonoBehaviour {
 	public List<KeyCode> rightKeys;
 	public List<KeyCode> jumpKeys;
 	public KeyCode sprintKey;
+	public KeyCode downKey;
 	public float addForceAmount;
 	public float jumpForceAmount;
 	public float sprintForceAmount;
+	public float flyVerticalForceAmount;
 
 	bool canJump;
 
@@ -19,9 +21,12 @@ public class KeyControl : MonoBehaviour {
 	Rigidbody rb;
 
 	EMath emath = new EMath();
+
+	FlyingControl fc;
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
+		fc = GetComponent<FlyingControl> ();
 	}
 	
 	void OnCollisionEnter(Collision coll){
@@ -80,6 +85,17 @@ public class KeyControl : MonoBehaviour {
 
 				}
 			}
+		}
+		if (fc.isFlying) {
+			foreach (KeyCode k in jumpKeys) {
+				if (Input.GetKey (k)) {
+					rb.AddRelativeForce (new Vector3 (0, flyVerticalForceAmount, 0));
+
+				}
+			}
+		}
+		if (fc.isFlying && Input.GetKey (downKey)) {
+			rb.AddRelativeForce (new Vector3 (0, -flyVerticalForceAmount, 0));
 		}
 	}
 

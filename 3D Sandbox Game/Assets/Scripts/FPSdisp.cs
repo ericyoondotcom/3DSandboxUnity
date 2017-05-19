@@ -13,7 +13,7 @@ public class FPSdisp : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
+		deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
 		float fps = 1.0f / deltaTime;
 		txt.text = fps + " FPS";
 
