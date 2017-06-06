@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DeathCheck.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneChanger.cs">
     <Files>
-      <File FileName="Assets/Scripts/FPSdisp.cs" Line="16" Column="39" />
+      <File FileName="Assets/Scripts/FPSdisp.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/SpawnOnKey.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerHealth.cs" Line="47" Column="15" />
+      <File FileName="Assets/Scripts/PlayerHealth.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Mining.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/KeyControl.cs" Line="32" Column="2" />
+      <File FileName="Assets/Scripts/KeyControl.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/MatchPos.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/MouseLook.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/EMath.cs" Line="1" Column="1" />
@@ -14,7 +14,7 @@
       <File FileName="Assets/Scripts/AlwaysAddForce.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/KillBox.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/BlockoHealthoMeter.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/BlockGen.cs" Line="84" Column="10" />
+      <File FileName="Assets/Scripts/BlockGen.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ChanceNoise.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/DamagePlayer.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/HealthMask.cs" Line="1" Column="1" />
@@ -24,10 +24,10 @@
       <File FileName="Assets/Scripts/SceneChanger.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/RandTextGen.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/DayNight.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ConwayGrass.cs" Line="20" Column="14" />
-      <File FileName="Assets/Scripts/FlyingControl.cs" Line="33" Column="34" />
+      <File FileName="Assets/Scripts/ConwayGrass.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FlyingControl.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/DeathCheck.cs" Line="24" Column="1" />
-      <File FileName="Assets/Scripts/Pulse.cs" Line="26" Column="78" />
+      <File FileName="Assets/Scripts/Pulse.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
