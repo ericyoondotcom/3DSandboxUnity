@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\BlockGen.cs" />
      <Compile Include="Assets\Scripts\BlockoHealthoMeter.cs" />
      <Compile Include="Assets\Scripts\ChanceNoise.cs" />
+     <Compile Include="Assets\Scripts\Commands.cs" />
      <Compile Include="Assets\Scripts\ConwayGrass.cs" />
      <Compile Include="Assets\Scripts\CreeperExplode.cs" />
      <Compile Include="Assets\Scripts\DamagePlayer.cs" />
@@ -58,6 +59,7 @@
      <Compile Include="Assets\Scripts\DeathCheck.cs" />
      <Compile Include="Assets\Scripts\EMath.cs" />
      <Compile Include="Assets\Scripts\FPSdisp.cs" />
+     <Compile Include="Assets\Scripts\FallDamage.cs" />
      <Compile Include="Assets\Scripts\FlyingControl.cs" />
      <Compile Include="Assets\Scripts\HealthMask.cs" />
      <Compile Include="Assets\Scripts\HideWhenOutOfRange.cs" />
