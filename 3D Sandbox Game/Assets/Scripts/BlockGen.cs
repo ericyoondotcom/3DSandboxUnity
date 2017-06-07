@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BlockGen : MonoBehaviour
-{	public bool isSuperflat = true;
+{	
+
+	public bool isSuperflat = true;
 	public float startingY = 50;
 	public GameObject prefab;
 	public float deviation;

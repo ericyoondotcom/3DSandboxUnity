@@ -7,12 +7,19 @@ public class PlayerHealth : MonoBehaviour {
 	private int _health;
 	public int maxHealth;
 	public AudioClip damagedSound;
+	public bool invincible = false;
 
 	public int health {
 		get {
 			return _health;
 		}
 		set {
+
+			if (invincible && value < _health) {
+				return;
+			}
+
+
 			//health = value; Oh, this is the bug! Before i found this the program would crash when I touched the zombie due to infinite recursion
 			if (value < _health) {
 				Debug.Log ("Oof!");

@@ -22,7 +22,7 @@ public class FallDamage : MonoBehaviour {
 	void OnCollisionEnter(Collision coll){
 		//Debug.Log ("collided");
 		float distance = initY - transform.position.y;
-		Debug.Log (distance);
+		//Debug.Log (distance);
 		if (distance > 0) {
 			float damage = (slope * distance) + yIntercept;
 			if (damage > 0) {
