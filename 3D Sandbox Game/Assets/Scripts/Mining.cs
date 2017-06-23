@@ -37,8 +37,9 @@ public class Mining : MonoBehaviour {
 			lr.SetPosition (0, transform.position);
 			Vector3 origin = Camera.main.ViewportToWorldPoint (new Vector3(0.5f, 0.5f, 0.0f));
 			RaycastHit hit;
-		if (Physics.Raycast (origin, Camera.main.transform.forward, out hit, reach)) { //"out" makes the variable "exported" back. so if you set val inside method the var gets set. reference, not value
-			
+		Debug.Log("raw: " + Input.mousePosition + ", toworld: " + Camera.main.ScreenToWorldPoint(Input.mousePosition));
+	//	if (Physics.Raycast (origin, Camera.main.transform.forward, out hit, reach)) { //"out" makes the variable "exported" back. so if you set val inside method the var gets set. reference, not value
+		if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, reach)){
 			lr.SetPosition (1, hit.point);
 			lr.material = targeted;
 			lr.enabled = true;	
@@ -66,16 +67,22 @@ public class Mining : MonoBehaviour {
 
 				}
 				GameObject n = (GameObject)Instantiate (hit.collider.gameObject, hit.collider.transform.position + shift, hit.collider.transform.rotation);
+				n.GetComponent<BlockTypes> ().blockType = BlockTypes.blockTypes.unknown;
 				MeshRenderer mr = n.GetComponent<MeshRenderer> ();
 				mr.material = blockSel [currMat];
-				//we're not using "n" but i might need it later
+
 
 			
 			} 
 		}else {
-			lr.SetPosition (1, origin + (Camera.main.transform.forward * reach));
+			//lr.SetPosition (1, origin + (Camera.main.transform.forward * reach));
+			/*RaycastHit linehit;
+			Physics.Raycast (Camera.main.ScreenPointToRay (Input.mousePosition), out linehit);
+			lr.SetPosition(1, linehit.point);
 			lr.material = idle;
-			lr.enabled = true;
+			lr.enabled = true;*/
+
+			lr.enabled = false;
 
 		}
 

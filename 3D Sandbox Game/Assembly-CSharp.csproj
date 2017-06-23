@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\AlwaysAddForce.cs" />
      <Compile Include="Assets\Scripts\AlwaysLook.cs" />
      <Compile Include="Assets\Scripts\BlockGen.cs" />
+     <Compile Include="Assets\Scripts\BlockTypes.cs" />
      <Compile Include="Assets\Scripts\BlockoHealthoMeter.cs" />
      <Compile Include="Assets\Scripts\ChanceNoise.cs" />
      <Compile Include="Assets\Scripts\Commands.cs" />
@@ -62,6 +63,7 @@
      <Compile Include="Assets\Scripts\FallDamage.cs" />
      <Compile Include="Assets\Scripts\FlyingControl.cs" />
      <Compile Include="Assets\Scripts\HealthMask.cs" />
+     <Compile Include="Assets\Scripts\HideOnKey.cs" />
      <Compile Include="Assets\Scripts\HideWhenOutOfRange.cs" />
      <Compile Include="Assets\Scripts\KeyControl.cs" />
      <Compile Include="Assets\Scripts\KillBox.cs" />
