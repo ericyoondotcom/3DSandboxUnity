@@ -52,39 +52,45 @@ public class BlockGen : MonoBehaviour
 				for (int y = 0; y < yval; y++) {
 					GameObject n = (GameObject)Instantiate (prefab, new Vector3 (x, y, z), Quaternion.identity);
 					if (y != yval - 1) {
-						if(y < yval - 3){
+						if (y < yval - 3) {
 							
-							if(Random.Range(0, 6) == 0){
+							if (Random.Range (0, 6) == 0) {
 								if (Random.Range (0, 3) == 0) {
 									if (Random.Range (0, 3) == 0) {
 										if (Random.Range (0, 3) == 0) {
 											//diamond, 0.6%
+											n.GetComponent<BlockTypes> ().blockType = BlockTypes.blockTypes.diamond;
 											n.GetComponent<MeshRenderer> ().material = diamondOre;
 										} else {
 											//gold, 1%
+											n.GetComponent<BlockTypes> ().blockType = BlockTypes.blockTypes.gold;
 											n.GetComponent<MeshRenderer> ().material = goldOre;
 										}
 									} else {
 										//iron, 3%
+										n.GetComponent<BlockTypes> ().blockType = BlockTypes.blockTypes.iron;
 										n.GetComponent<MeshRenderer> ().material = ironOre;
 									}
 								} else {
 									//coal, 11%
+									n.GetComponent<BlockTypes> ().blockType = BlockTypes.blockTypes.coal;
 									n.GetComponent<MeshRenderer> ().material = coalOre;
 								}
-							}
-							else{
+							} else {
 								//stone, 83%
-							n.GetComponent<MeshRenderer> ().material = stone;
+								n.GetComponent<BlockTypes> ().blockType = BlockTypes.blockTypes.stone;
+								n.GetComponent<MeshRenderer> ().material = stone;
 							}
 
 
 
-						}
-						else{
-						n.GetComponent<MeshRenderer> ().material = dirt;
+						} else {
+							n.GetComponent<MeshRenderer> ().material = dirt;
+							n.GetComponent<BlockTypes> ().blockType = BlockTypes.blockTypes.dirt;
 							//n.GetComponent<ConwayGrass> ().enabled = true;
 						}
+					} else {
+						n.GetComponent<BlockTypes>().blockType = BlockTypes.blockTypes.grass;
 					}
 				}
 			}
